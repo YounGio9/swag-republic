@@ -28,8 +28,7 @@
    },
    "lint-staged": {
       "**/*.{ts,tsx,js,jsx}": [
-         "npm run format",
-         "npm run lint "
+         "prettier --write ."
       ]
    },
    "devDependencies": {
