@@ -36,12 +36,12 @@ npm run check-lint ||
 npm run check-types ||
 (
     echo '🤡😂❌🤡 Failed Type check. Whats going on ? 🤡😂❌🤡 
-                Are you seriously trying to write that? Make the changes required above.'
+                Are you seriously trying to write that? Make the changes required above. \n'
     false;
 )
 
 # If everything passes... Now we can commit
-echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
+echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔 \n'
 
 # npm run build ||
 # (
@@ -52,4 +52,4 @@ echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build n
 # )
 
 # If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅ \n'
