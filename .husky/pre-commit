@@ -13,22 +13,22 @@ npx lint-staged
 # Check Prettier standards
 npm run check-format ||
 (
-    echo '🤢🤮🤢🤮 Its a big shit bro! - Your styling looks disgusting. 🤢🤮🤢🤮
-            Prettier Check Failed. Run npm run format, add changes and try commit again.';
+    echo '\n 🤢🤮🤢🤮 Its a big shit bro! - Your styling looks disgusting. 🤢🤮🤢🤮
+             Prettier Check Failed. Run npm run format, add changes and try commit again. \n';
     false;
 )
 
 npm run lint || (
-        echo '😤 I dont want bugs. Please provide a good code ! 😤 
-                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        echo '\n😤 I dont want bugs. Please provide a good code ! 😤 
+                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.\n'
         false; 
 )
 
 # Check ESLint Standards
 npm run check-lint ||
 (
-        echo '😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤 
-                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        echo '\n 😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤 
+                 ESLint Check Failed. Make the required changes listed above, add changes and try to commit again. \n'
         false; 
 )
 

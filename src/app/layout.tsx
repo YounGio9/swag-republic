@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import BannerProvider from "@/contexts/BannerContext";
+import Banner from "@/components/Banner/Banner";
 
 // eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +23,12 @@ export default function RootLayout({
 }): React.JSX.Element {
    return (
       <html lang="en">
-         <body className={inter.className}>{children}</body>
+         <BannerProvider>
+            <body className={inter.className}>
+               <Banner />
+               {children}
+            </body>
+         </BannerProvider>
       </html>
    );
 }
