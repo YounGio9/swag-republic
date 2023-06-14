@@ -12,12 +12,11 @@ function Presentation() {
       <section className='w-full'>
          <div className='flex flex-col grow lg:flex-row'>
             <div className='lg:hidden'>
-               <span className=''>
+               <span className='w-full'>
                   <img
                      src={cover.src}
                      alt=''
-                     className='w-full object-top object-cover'
-                     style={{ height: "700px" }}
+                     className='w-full h-auto object-top object-cover'
                   />
                </span>
             </div>
@@ -40,7 +39,7 @@ function Presentation() {
                   </a>
                </div>
                <hr className='h-0 border-t w-full border-black'></hr>
-               <div className='flex relative justify-center  p-8 w-full max-w-3xl lg:px-16'>
+               <div className='flex relative justify-center items-center  p-8 w-full max-w-3xl lg:px-16'>
                   <div className='w-full'>
                      <h3 className='mt-10 mb-1 text-xl font-semibold lg:mt-5 lg:text-3xl'>
                         Ton Sweet SR
@@ -51,7 +50,7 @@ function Presentation() {
                            className='transition-all py-2.5 px-6 rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1
                     bg-white my-1 text-lg font-medium lg:my-5 shadow-[4px_4px_black] border border-black'
                         >
-                           <div className=''>A seulement 10 000 FCFA</div>
+                           <div className=''>dès 10 000 F</div>
                         </button>
                      </a>
                   </div>

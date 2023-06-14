@@ -16,6 +16,9 @@ module.exports = {
             "swag-yellow": "#FFF95F",
             "swag-red": "#bd1e31",
          },
+         fontFamily: {
+            swag: ["Whyte Inktrap", "sans-serif"],
+         },
       },
    },
    plugins: [],

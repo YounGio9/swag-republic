@@ -7,6 +7,7 @@ interface Props {
    background: background
    children: React.ReactNode | string
    color: color
+   rounded?: boolean
 }
 
 /**
@@ -14,7 +15,7 @@ interface Props {
  * @param {Props}: Props of the Button
  * @return {React.JSX.Element}: Return CustomButton
  */
-function CustomButtom({ children, background, color }: Props) {
+function CustomButtom({ children, background, color, rounded }: Props) {
    const getBgClass = (color: background): string => {
       switch (color) {
          case "red":
@@ -30,11 +31,15 @@ function CustomButtom({ children, background, color }: Props) {
 
    return (
       <button
-         className={`transition-all py-2.5 px-6 ${
+         className={`transition-all ${!rounded ? "py-2.5" : "py-2"}  ${
+            !rounded ? "px-6" : "px-2"
+         } ${
             color === "white" ? "text-white" : "text-black"
          } rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1 ${getBgClass(
             background
-         )}  shadow-[4px_4px_black] border border-black`}
+         )}  ${
+            rounded ? "shadow-[2px_2px_black]" : "shadow-[4px_4px_black]"
+         }   border border-black`}
       >
          <div className=''>{children}</div>
       </button>

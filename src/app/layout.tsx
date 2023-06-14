@@ -2,6 +2,7 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import BannerProvider from "@/contexts/BannerContext"
 import Banner from "@/components/Banner/Banner"
+import Footer from "@/components/Footer"
 
 // eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] })
@@ -24,9 +25,10 @@ export default function RootLayout({
    return (
       <html lang='en'>
          <BannerProvider>
-            <body className={inter.className}>
+            <body className={"font-swag"}>
                <Banner />
                {children}
+               <Footer />
             </body>
          </BannerProvider>
       </html>

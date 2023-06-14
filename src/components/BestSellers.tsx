@@ -10,7 +10,7 @@ import Article from "./Article"
 function BestSales(): React.JSX.Element {
    return (
       <section className='bg-repeat bg-fixed flex flex-col items-center py-12 lg:py-24'>
-         <p className='text-4xl font-medium lg:text-6xl'>Nos best sellers</p>
+         <p className='text-3xl font-medium lg:text-6xl'>Nos meilleurs articles</p>
          <div className='flex flex-wrap gap-4 justify-center my-8 max-w-2xl lg:my-12 lg:max-w-screen-2xl'>
             {bestSellers.map((pull: types.Article) => (
                <Article key={pull.name} {...pull} />
