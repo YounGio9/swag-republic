@@ -28,14 +28,14 @@ function Presentation() {
                   </h1>
                   <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
                      Des articles a partir de &nbsp;
-                     <span className='font-semibold'>10 000 francs</span>
+                     <span className='font-semibold'>8 000 francs</span>
                   </p>
                   <a href='# ' className='my-12'>
                      <CustomButtom background='red' color='white'>
                         <span className='hidden lg:inline-block'>
                            Choisis le vetement de tes rêves
                         </span>
-                        <span className='lg:hidden'>Choisis ton tel</span>
+                        <span className='lg:hidden'>Choisis ton article SR</span>
                      </CustomButtom>
                   </a>
                </div>
@@ -43,17 +43,15 @@ function Presentation() {
                <div className='flex relative justify-center  p-8 w-full max-w-3xl lg:px-16'>
                   <div className='w-full'>
                      <h3 className='mt-10 mb-1 text-xl font-semibold lg:mt-5 lg:text-3xl'>
-                        Ton iPhone 13
+                        Ton Sweet SR
                      </h3>
-                     <p className='mb-1 text-lg lg:mb-5 lg:text-2xl'>
-                        Assuré casse &amp; vol, livré en 48h
-                     </p>
+                     <p className='mb-1 text-lg lg:mb-5 lg:text-2xl'>Livré en 48h</p>
                      <a href='# '>
                         <button
                            className='transition-all py-2.5 px-6 rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1
                     bg-white my-1 text-lg font-medium lg:my-5 shadow-[4px_4px_black] border border-black'
                         >
-                           <div className=''>dès 37,90€/mois</div>
+                           <div className=''>A seulement 10 000 FCFA</div>
                         </button>
                      </a>
                   </div>

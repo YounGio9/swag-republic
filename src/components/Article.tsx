@@ -61,7 +61,7 @@ function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
                </p>
                <div className='flex flex-col items-center lg:mb-9 mb-6 mt-2'>
                   {" "}
-                  {apport}{" "}
+                  {/* {apport}{" "} */}
                </div>
             </div>
          </div>

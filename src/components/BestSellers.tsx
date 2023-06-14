@@ -22,7 +22,7 @@ function BestSales(): React.JSX.Element {
             active:translate-x-1 active:translate-y-1 bg-swagg hover:text-white hover:bg-cornflower-blue 
           active:text-white active:bg-cornflower-blue font-semibold shadow-[4px_4px_black] border border-black'
             >
-               Voir tous nos tels
+               Voir tous nos articles
             </button>
          </a>
       </section>
