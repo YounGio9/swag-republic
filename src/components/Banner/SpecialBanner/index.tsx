@@ -1,3 +1,3 @@
-import SpecialBanner from "./SpecialBanner";
+import SpecialBanner from "./SpecialBanner"
 
-export default SpecialBanner;
+export default SpecialBanner

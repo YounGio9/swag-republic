@@ -1,13 +1,13 @@
-import { useBannerContext } from "@/contexts/BannerContext";
-import React from "react";
-import View from "./View";
+import { useBannerContext } from "@/contexts/BannerContext"
+import React from "react"
+import View from "./View"
 
 /**
  * A Special Banner just at bottom of Banner
  * @return {React.JSX.Element}: Shows benefits of the market.
  */
 function SpecialBanner(): React.JSX.Element {
-   const { menuOpen } = useBannerContext();
+   const { menuOpen } = useBannerContext()
 
    return (
       <div
@@ -15,7 +15,7 @@ function SpecialBanner(): React.JSX.Element {
             menuOpen ? "hidden" : ""
          }`}
       >
-         <div className="marquee-container flex">
+         <div className='marquee-container flex'>
             {Array(6)
                .fill(0)
                .map((_, idx) => (
@@ -23,7 +23,7 @@ function SpecialBanner(): React.JSX.Element {
                ))}
          </div>
       </div>
-   );
+   )
 }
 
-export default SpecialBanner;
+export default SpecialBanner

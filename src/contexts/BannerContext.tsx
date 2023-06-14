@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { types } from "@/helpers";
-import React from "react";
+import { types } from "@/helpers"
+import React from "react"
 
-const BannerContext = React.createContext<types.BannerContext>({} as types.BannerContext);
+const BannerContext = React.createContext<types.BannerContext>({} as types.BannerContext)
 
 interface Props {
-   children: React.ReactNode | null;
+   children: React.ReactNode | null
 }
 
 /**
@@ -15,17 +15,17 @@ interface Props {
  * @return {React.JSX.Element}: Banner Provider
  */
 function BannerProvider({ children }: Props): React.JSX.Element {
-   const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
+   const [menuOpen, setMenuOpen] = React.useState<boolean>(false)
 
-   const toggleMenu = () => setMenuOpen(!menuOpen);
+   const toggleMenu = () => setMenuOpen(!menuOpen)
 
    return (
       <BannerContext.Provider value={{ menuOpen, setMenuOpen, toggleMenu }}>
          {children}
       </BannerContext.Provider>
-   );
+   )
 }
 
-export default BannerProvider;
+export default BannerProvider
 
-export const useBannerContext = () => React.useContext(BannerContext);
+export const useBannerContext = () => React.useContext(BannerContext)

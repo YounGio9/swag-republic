@@ -14,8 +14,9 @@ module.exports = {
          },
          colors: {
             "swag-yellow": "#FFF95F",
+            "swag-red": "#bd1e31",
          },
       },
    },
    plugins: [],
-};
+}
