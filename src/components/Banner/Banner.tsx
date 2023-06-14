@@ -125,31 +125,6 @@ function Banner(): React.JSX.Element {
          >
             <a
                className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
-               href='/business'
-            >
-               Entreprises
-               <svg
-                  width='20'
-                  height='20'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                  role='img'
-                  className='lg:hidden'
-               >
-                  <path
-                     d='M3.832 6.17v.5h7.129l-8.315 8.313-.353.354.353.354 2.663 2.663.354.353.354-.353 8.314-8.315v7.13H19.5V1.5H3.832v4.67Z'
-                     fill='#000'
-                     stroke='#000'
-                  ></path>
-                  <path
-                     d='M2.832 5.17v.5H9.96l-8.315 8.313-.353.354.353.354 2.663 2.663.354.353.354-.353 8.314-8.315v7.13H18.5V.5H2.832v4.67Z'
-                     fill='#fff'
-                     stroke='#000'
-                  ></path>
-               </svg>
-            </a>
-            <a
-               className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
                href='/club'
             >
                Le club
@@ -198,9 +173,9 @@ function Banner(): React.JSX.Element {
                   ></path>
                </svg>
             </a>
-            <CustomButtom color='white' background='red'>
+            {/* <CustomButtom color='white' background='red'>
                Espace membre
-            </CustomButtom>
+            </CustomButtom> */}
          </div>
          {/* <SpecialBanner /> */}
       </nav>
