@@ -1,8 +1,8 @@
 "use client"
 
 import { useBannerContext } from "@/contexts/BannerContext"
+import Link from "next/link"
 import React from "react"
-import CustomButtom from "../CustomButtom"
 
 /**
  * Banner Component that include navigation links and website logo
@@ -65,16 +65,16 @@ function Banner(): React.JSX.Element {
                   </button>
                </div>
             )}
-            <a href='/' className='text-3xl font-bold'>
+            <Link href={"/"} className='text-3xl font-bold'>
                Swag.Republic
-            </a>
+            </Link>
             <div className='hidden lg:flex gap-x-6'>
-               <a
-                  href='/entreprise'
+               <Link
+                  href='/shop'
                   className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
                >
                   Nos articles
-               </a>
+               </Link>
                <a
                   href='/club'
                   className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
@@ -83,7 +83,7 @@ function Banner(): React.JSX.Element {
                </a>
             </div>
             <div className='flex relative items-center ml-2'>
-               <CustomButtom color='black' background='white'>
+               {/* <CustomButtom color='black' background='white'>
                   <div className='flex flex-row items-center gap-x-2'>
                      <svg
                         width='24'
@@ -115,7 +115,7 @@ function Banner(): React.JSX.Element {
                      </svg>
                      <span className='hidden lg:block'>Espace membre</span>
                   </div>
-               </CustomButtom>
+               </CustomButtom> */}
             </div>
          </div>
          <div

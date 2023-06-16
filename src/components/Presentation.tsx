@@ -22,8 +22,9 @@ function Presentation() {
             </div>
             <article className='flex basis-[48%] flex-col items-center border-r border-r-black'>
                <div className='flex flex-col items-center px-8 max-w-3xl lg:items-start lg:px-16'>
-                  <h1 className='my-6 text-4xl font-medium text-center px-1 lg:my-12 lg:text-7xl lg:text-left'>
-                     Es-tu prêt à connaître l’effet Wow du SWAG ?
+                  <h1 className='my-6 text-xl font-mono  font-medium text-center px-1 lg:my-12 lg:text-6xl'>
+                     If you don&apos;t understand SWAG REPUBLIC, <br /> Wear one of the
+                     pieces and you will understand
                   </h1>
                   <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
                      Des articles a partir de &nbsp;
