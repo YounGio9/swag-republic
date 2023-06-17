@@ -1,4 +1,3 @@
-import BestSales from "@/components/BestSellers"
 import Presentation from "@/components/Presentation"
 import React from "react"
 
@@ -8,9 +7,9 @@ import React from "react"
  */
 export default function Home(): React.JSX.Element {
    return (
-      <main className='flex min-h-screen flex-col items-center justify-between'>
+      <main className='flex h-full md:min-h-screen flex-col items-center justify-between'>
          <Presentation />
-         <BestSales />
+         {/* <BestSales /> */}
       </main>
    )
 }

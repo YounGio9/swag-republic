@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from "next/navigation"
 import React from "react"
 import cover from "../assets/swag-cover.jpg"
 import CustomButtom from "./CustomButtom"
@@ -8,10 +10,11 @@ import CustomButtom from "./CustomButtom"
  * @return {React.JSX.Element}: Presentaion Component
  */
 function Presentation() {
+   const router = useRouter()
    return (
       <section className='w-full'>
-         <div className='flex flex-col grow lg:flex-row'>
-            <div className='lg:hidden'>
+         <div className='flex flex-col grow lg:flex-row-reverse'>
+            <div>
                <span className='w-full'>
                   <img
                      src={cover.src}
@@ -20,27 +23,29 @@ function Presentation() {
                   />
                </span>
             </div>
-            <article className='flex basis-[48%] flex-col items-center border-r border-r-black'>
-               <div className='flex flex-col items-center px-8 max-w-3xl lg:items-start lg:px-16'>
+            <article className='flex basis-[48%]  flex-col items-center border-r border-r-black'>
+               <div className='flex flex-col h-full items-center px-8 max-w-3xl lg:items-start lg:px-16'>
                   <h1 className='my-6 text-xl font-mono  font-medium text-center px-1 lg:my-12 lg:text-6xl'>
-                     If you don&apos;t understand SWAG REPUBLIC, <br /> Wear one of the
-                     pieces and you will understand
+                     If you don&apos;t understand SWAG REPUBLIC,{" "}
+                     <br className=' lg:mb-6' /> Wear one of the pieces and you will
+                     understand
                   </h1>
-                  <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
+                  {/* <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
                      Des articles a partir de &nbsp;
                      <span className='font-semibold'>8 000 francs</span>
-                  </p>
-                  <a href='# ' className='my-12'>
-                     <CustomButtom background='red' color='white'>
-                        <span className='hidden lg:inline-block'>
-                           Choisis le vetement de tes rêves
-                        </span>
-                        <span className='lg:hidden'>Choisis ton article SR</span>
+                  </p> */}
+                  <a href='# ' className='my-12 flex justify-center w-full'>
+                     <CustomButtom
+                        background='red'
+                        color='white'
+                        handleClick={() => router.push("/shop")}
+                     >
+                        <span className=''>Choisis ton article SR</span>
                      </CustomButtom>
                   </a>
                </div>
                <hr className='h-0 border-t w-full border-black'></hr>
-               <div className='flex relative justify-center items-center  p-8 w-full max-w-3xl lg:px-16'>
+               {/* <div className='flex relative justify-center items-center  p-8 w-full max-w-3xl lg:px-16'>
                   <div className='w-full'>
                      <h3 className='mt-10 mb-1 text-xl font-semibold lg:mt-5 lg:text-3xl'>
                         Ton Sweet SR
@@ -60,13 +65,13 @@ function Presentation() {
                         <img src={cover.src} alt='' />
                      </span>
                   </div>
-               </div>
+               </div> */}
             </article>
-            <div className='hidden relative grow bg-slate-700 lg:flex'>
+            {/* <div className='hidden relative grow bg-slate-700 lg:flex'>
                <span className='w-full'>
                   <img src={cover.src} alt='' className='w-full object-cover h-full' />
                </span>
-            </div>
+            </div> */}
          </div>
          {/* <div className='flex flex-wrap gap-x-10 gap-y-6 justify-center py-6 text-center bg-swag-yellow border-y border-y-black lg:gap-x-20'>
             <div className='flex flex-col items-center'>

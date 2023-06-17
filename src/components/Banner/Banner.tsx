@@ -4,6 +4,7 @@ import { useBannerContext } from "@/contexts/BannerContext"
 import Link from "next/link"
 import React from "react"
 
+// const bebasNeue = Bebas_Neue({weight: '400', subsets: ['latin']})
 /**
  * Banner Component that include navigation links and website logo
  * @return {React.JSX.Element}: The entire Banner of the website.
@@ -12,7 +13,7 @@ function Banner(): React.JSX.Element {
    const { menuOpen, toggleMenu } = useBannerContext()
    return (
       <nav
-         className={`pt-10 lg:pt-0 ${
+         className={`pt-3 lg:pt-0 ${
             menuOpen
                ? "fixed bg-white w-full h-screen z-50 lg:static lg:h-fit pt-10 lg:pt-0"
                : ""
@@ -66,7 +67,10 @@ function Banner(): React.JSX.Element {
                </div>
             )}
             <Link href={"/"} className='text-3xl font-bold'>
-               Swag.Republic
+               <div className={`flex flex-col items-center font-normal font-header`}>
+                  <span>SWAG</span>
+                  <span>REPUBLIC</span>
+               </div>
             </Link>
             <div className='hidden lg:flex gap-x-6'>
                <Link
@@ -75,12 +79,12 @@ function Banner(): React.JSX.Element {
                >
                   Nos articles
                </Link>
-               <a
+               {/* <a
                   href='/club'
                   className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
                >
                   Le Club
-               </a>
+               </a> */}
             </div>
             <div className='flex relative items-center ml-2'>
                {/* <CustomButtom color='black' background='white'>
@@ -148,7 +152,7 @@ function Banner(): React.JSX.Element {
                   ></path>
                </svg>
             </a>
-            <a
+            {/* <a
                className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
                href='/blog?utm_source=website&utm_medium=website+link&utm_campaign=generic_websitelink'
             >
@@ -172,7 +176,7 @@ function Banner(): React.JSX.Element {
                      stroke='#000'
                   ></path>
                </svg>
-            </a>
+            </a> */}
             {/* <CustomButtom color='white' background='red'>
                Espace membre
             </CustomButtom> */}

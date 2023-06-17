@@ -18,6 +18,7 @@ module.exports = {
          },
          fontFamily: {
             swag: ["Whyte Inktrap", "sans-serif"],
+            header: ["Bebas Neue", "sans-serif"],
          },
       },
    },

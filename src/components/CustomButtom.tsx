@@ -8,6 +8,7 @@ interface Props {
    children: React.ReactNode | string
    color: color
    rounded?: boolean
+   handleClick?(e: React.MouseEvent<HTMLButtonElement>): void
 }
 
 /**
@@ -15,7 +16,7 @@ interface Props {
  * @param {Props}: Props of the Button
  * @return {React.JSX.Element}: Return CustomButton
  */
-function CustomButtom({ children, background, color, rounded }: Props) {
+function CustomButtom({ children, background, color, rounded, handleClick }: Props) {
    const getBgClass = (color: background): string => {
       switch (color) {
          case "red":
@@ -31,6 +32,7 @@ function CustomButtom({ children, background, color, rounded }: Props) {
 
    return (
       <button
+         onClick={handleClick}
          className={`transition-all ${!rounded ? "py-2.5" : "py-2"}  ${
             !rounded ? "px-6" : "px-2"
          } ${

@@ -9,6 +9,7 @@ export const bestSellers: types.Article[] = [
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: true,
+      categories: ["Pull"],
    },
    {
       name: "Sweet à capuche",
@@ -17,6 +18,7 @@ export const bestSellers: types.Article[] = [
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: true,
+      categories: ["Sacoche"],
    },
    {
       name: "Sweet à capuche",
@@ -25,6 +27,7 @@ export const bestSellers: types.Article[] = [
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: true,
+      categories: ["Pull"],
    },
    {
       name: "Sweet à capuche",
@@ -33,5 +36,6 @@ export const bestSellers: types.Article[] = [
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
+      categories: ["Pull"],
    },
 ]

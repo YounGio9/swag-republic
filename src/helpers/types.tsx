@@ -11,4 +11,5 @@ export interface Article {
    colors: string[]
    price: string
    apport: string
+   categories: string[]
 }

@@ -56,10 +56,7 @@ function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
                   ))}
                </div>
                <p className='font-bold lg:text-2xl'> {price} </p>
-               <p className='px-2 text-sm font-semibold text-white bg-cornflower-blue rounded-full lg:text-base'>
-                  Assuré Casse & Vol
-               </p>
-               <div className='flex flex-col items-center lg:mb-9 mb-6 mt-2'>
+               <div className='flex flex-col items-center lg:mb-2 mb-6 mt-2'>
                   {" "}
                   {/* {apport}{" "} */}
                </div>
