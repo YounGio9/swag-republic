@@ -44,7 +44,7 @@ function Presentation() {
                      </CustomButtom>
                   </a>
                </div>
-               <hr className='h-0 border-t w-full border-black'></hr>
+               {/* <hr className='h-0 border-t w-full border-black'></hr> */}
                {/* <div className='flex relative justify-center items-center  p-8 w-full max-w-3xl lg:px-16'>
                   <div className='w-full'>
                      <h3 className='mt-10 mb-1 text-xl font-semibold lg:mt-5 lg:text-3xl'>
