@@ -18,7 +18,7 @@ function Shop() {
    const filteredCategories = Array.from(new Set(categories))
 
    return (
-      <div className='min-h-[88vh] mb-6'>
+      <div className='min-h-[88vh] mb-14'>
          <ShopppingList
             name='Nos vetements'
             articles={totalArticles}
