@@ -40,7 +40,7 @@ function Presentation() {
                         color='white'
                         handleClick={() => router.push("/shop")}
                      >
-                        <span className=' mb-14'>Open the market</span>
+                        <span className=' mb-14'>Open the store</span>
                      </CustomButtom>
                   </a>
                </div>
