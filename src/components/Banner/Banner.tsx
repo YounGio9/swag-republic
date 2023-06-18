@@ -129,7 +129,7 @@ function Banner(): React.JSX.Element {
          >
             <a
                className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
-               href='/club'
+               href='/shop'
             >
                Nos articles
                <svg
