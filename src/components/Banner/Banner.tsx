@@ -67,7 +67,7 @@ function Banner(): React.JSX.Element {
                </div>
             )}
             <Link href={"/"} className='text-3xl font-bold'>
-               <div className={`flex flex-col items-center font-normal font-header`}>
+               <div className={`flex flex-col items-center font-semibold font-header`}>
                   <span>SWAG</span>
                   <span>REPUBLIC</span>
                </div>

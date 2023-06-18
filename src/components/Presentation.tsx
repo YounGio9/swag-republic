@@ -28,7 +28,7 @@ function Presentation() {
                   <h1 className='my-6 text-xl font-mono  font-medium text-center px-1 lg:my-12 lg:text-6xl'>
                      If you don&apos;t understand SWAG REPUBLIC,{" "}
                      <br className=' lg:mb-6' /> Wear one of the pieces and you will
-                     understand
+                     understand.
                   </h1>
                   {/* <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
                      Des articles a partir de &nbsp;
@@ -40,7 +40,7 @@ function Presentation() {
                         color='white'
                         handleClick={() => router.push("/shop")}
                      >
-                        <span className=' mb-14'>Choisis ton article SR</span>
+                        <span className=' mb-14'>Open the market</span>
                      </CustomButtom>
                   </a>
                </div>
