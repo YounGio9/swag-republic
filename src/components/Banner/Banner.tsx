@@ -3,6 +3,7 @@
 import { useBannerContext } from "@/contexts/BannerContext"
 import Link from "next/link"
 import React from "react"
+import BannerLogo from "../../assets/bannerLogo.png"
 
 // const bebasNeue = Bebas_Neue({weight: '400', subsets: ['latin']})
 /**
@@ -67,9 +68,10 @@ function Banner(): React.JSX.Element {
                </div>
             )}
             <Link href={"/"} className='text-3xl font-bold'>
-               <div className={`flex flex-col items-center font-semibold font-header`}>
-                  <span>SWAG</span>
-                  <span>REPUBLIC</span>
+               <div
+                  className={`flex flex-col items-center font-semibold font-header relative h-[8.5vh]`}
+               >
+                  <img src={BannerLogo.src} alt='' className=' h-52 w-auto -mt-14' />
                </div>
             </Link>
             <div className='hidden lg:flex gap-x-6'>
