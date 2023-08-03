@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation"
 import React from "react"
 import { bestSellers } from "../db/bestSellers"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 import ShopppingList from "./ShoppingList"
 
 /**
@@ -14,14 +14,14 @@ function BestSales(): React.JSX.Element {
 
    return (
       <>
-         <ShopppingList articles={bestSellers} name='Nos meilleurs articles' />
-         <CustomButtom
+         <ShopppingList articles={bestSellers} title='Nos meilleurs articles' />
+         <CustomButton
             handleClick={() => router.push("/shop")}
             background='white'
             color='black'
          >
             Voir tous nos articles
-         </CustomButtom>
+         </CustomButton>
          <p className='mb-12'></p>
       </>
    )

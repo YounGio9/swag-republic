@@ -1,41 +1,17 @@
 import { types } from "@/helpers"
-import sweeet from "../assets/sweet.jpg"
 
 export const bestSellers: types.Article[] = [
    {
-      name: "Sweet à capuche",
-      cover: sweeet.src,
-      colors: ["#41464C", "#60AEE1", "#F5C6BD"],
+      id: 1,
+      name: "SR promotional hoodie",
+      cover: "/imgs/promotional2.JPG",
+      description:
+         "Promotional hoodie available in black, beige and red colors, the flag is embroidered on the left side with the website name written on the back.",
+      images: ["/imgs/promotional"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: true,
-      categories: ["Pull"],
-   },
-   {
-      name: "Sweet à capuche",
-      cover: sweeet.src,
-      colors: ["#41464C", "#60AEE1", "#F5C6BD", "#F5F6EF"],
-      price: "12 000 FCFA",
-      apport: "+ 99,00 € d’apport",
-      isNew: true,
-      categories: ["Sacoche"],
-   },
-   {
-      name: "Sweet à capuche",
-      cover: sweeet.src,
-      colors: ["#41464C", "#60AEE1", "#F5C6BD"],
-      price: "12 000 FCFA",
-      apport: "+ 99,00 € d’apport",
-      isNew: true,
-      categories: ["Pull"],
-   },
-   {
-      name: "Sweet à capuche",
-      cover: sweeet.src,
-      colors: ["#41464C", "#60AEE1", "#F5C6BD"],
-      price: "12 000 FCFA",
-      apport: "+ 99,00 € d’apport",
-      isNew: false,
       categories: ["Pull"],
    },
 ]

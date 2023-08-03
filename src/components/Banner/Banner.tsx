@@ -89,7 +89,7 @@ function Banner(): React.JSX.Element {
                </a> */}
             </div>
             <div className='flex relative items-center ml-2'>
-               {/* <CustomButtom color='black' background='white'>
+               {/* <CustomButton color='black' background='white'>
                   <div className='flex flex-row items-center gap-x-2'>
                      <svg
                         width='24'
@@ -121,7 +121,7 @@ function Banner(): React.JSX.Element {
                      </svg>
                      <span className='hidden lg:block'>Espace membre</span>
                   </div>
-               </CustomButtom> */}
+               </CustomButton> */}
             </div>
          </div>
          <div
@@ -179,9 +179,9 @@ function Banner(): React.JSX.Element {
                   ></path>
                </svg>
             </a> */}
-            {/* <CustomButtom color='white' background='red'>
+            {/* <CustomButton color='white' background='red'>
                Espace membre
-            </CustomButtom> */}
+            </CustomButton> */}
          </div>
          {/* <SpecialBanner /> */}
       </nav>

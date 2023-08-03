@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation"
 import React from "react"
 import cover from "../assets/swag-cover.jpg"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 
 /**
  * This component is the first component of the website
@@ -35,13 +35,13 @@ function Presentation() {
                      <span className='font-semibold'>8 000 francs</span>
                   </p> */}
                   <a href='# ' className='my-12 flex justify-center w-full'>
-                     <CustomButtom
+                     <CustomButton
                         background='red'
                         color='white'
                         handleClick={() => router.push("/shop")}
                      >
                         <span className=' mb-14'>Open the store</span>
-                     </CustomButtom>
+                     </CustomButton>
                   </a>
                </div>
                {/* <hr className='h-0 border-t w-full border-black'></hr> */}

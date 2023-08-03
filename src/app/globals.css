@@ -41,3 +41,12 @@ body {
       transform: translateX(-100%);
    }
 }
+
+.swiper-slide {
+   display: flex !important;
+   width: auto !important;
+}
+
+.swiper-pagination {
+   position: relative !important;
+}

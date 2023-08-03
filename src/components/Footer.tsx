@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { BsInstagram, BsWhatsapp } from "react-icons/bs"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 import logo from "../assets/logo.png"
 
 /**
@@ -22,7 +22,7 @@ function Footer() {
             />
          </div>
          <div className='w-full flex items-center gap-3 pt-6 justify-center'>
-            <CustomButtom
+            <CustomButton
                color='black'
                handleClick={() => {
                   window.location =
@@ -32,10 +32,10 @@ function Footer() {
                rounded
             >
                <BsInstagram size={22} />
-            </CustomButtom>
-            <CustomButtom color='black' background='white' rounded>
+            </CustomButton>
+            <CustomButton color='black' background='white' rounded>
                <BsWhatsapp size={22} />
-            </CustomButtom>
+            </CustomButton>
          </div>
          {/* <div className='w-full p-6'>
             <button

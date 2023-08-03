@@ -5,7 +5,10 @@ export interface BannerContext {
 }
 
 export interface Article {
+   id: number
+   images?: string[]
    isNew: boolean
+   description: string
    name: string
    cover: string
    colors: string[]

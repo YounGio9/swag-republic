@@ -3,11 +3,11 @@
 import { types } from "@/helpers"
 import React, { useState } from "react"
 import Article from "./Article"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 
 interface Props {
    articles: types.Article[]
-   name: string
+   title: string
    categories?: string[]
 }
 
@@ -16,7 +16,7 @@ interface Props {
  * List of products
  * @return {React.ReactElement}: A shoppinglist
  */
-function ShopppingList({ articles, name, categories }: Props) {
+function ShopppingList({ articles, title, categories }: Props) {
    const [activeCategory, setActiveCategory] = useState<string>("")
 
    React.useMemo(() => {
@@ -25,19 +25,19 @@ function ShopppingList({ articles, name, categories }: Props) {
    return (
       <div className='flex flex-col gap-4 justify-center items-center lg:mx-auto lg:max-w-[90rem]'>
          <section className='bg-repeat bg-fixed flex flex-col items-center pt-12 lg:pt-24'>
-            <p className='text-3xl font-medium lg:text-6xl'>{name}</p>
+            <p className='text-3xl font-medium lg:text-6xl'>{title}</p>
 
             {!!categories && (
                <div className='flex gap-6'>
                   {categories?.map((category) => (
-                     <CustomButtom
+                     <CustomButton
                         handleClick={(e) => setActiveCategory(category)}
                         key={category}
                         background='white'
                         color='black'
                      >
                         {category}
-                     </CustomButtom>
+                     </CustomButton>
                   ))}
                </div>
             )}
