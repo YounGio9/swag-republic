@@ -32,6 +32,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
             <div className='grow'>
                <Swiper
                   // install Swiper modules
+                  loop
                   modules={[Navigation, Pagination, A11y]}
                   spaceBetween={40}
                   slidesPerView={3}
