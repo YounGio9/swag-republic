@@ -17,7 +17,7 @@ function Article({ name, cover, colors, price, id, apport }: types.Article) {
                className='relative rounded-lg border transform-gpu border-black bg-white 
             hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9'
             >
-               <div className='font-bold lg:text-2xl w-[170px] lg:w-[280px] text-center'>
+               <div className='font-bold capitalize lg:text-2xl w-[170px] lg:w-[280px] text-center'>
                   {name}
                </div>
                <div className='relative flex justify-center items-center mx-7 w-32 h-36 lg:mx-14 lg:w-44 lg:h-60'>
@@ -31,7 +31,7 @@ function Article({ name, cover, colors, price, id, apport }: types.Article) {
                      />
                   </span>
                </div>
-               <div className='flex gap-2.5 justify-center mt-8'>
+               {/* <div className='flex gap-2.5 justify-center mt-8'>
                   {Array.from({ length: colors.length }, (_, index) => (
                      <div
                         key={index}
@@ -39,7 +39,7 @@ function Article({ name, cover, colors, price, id, apport }: types.Article) {
                         style={{ background: colors[index] }}
                      ></div>
                   ))}
-               </div>
+               </div> */}
 
                <p className='font-bold lg:text-2xl'> {price} </p>
                <div className='flex flex-col items-center lg:mb-2 mb-6 mt-2'> </div>
