@@ -41,12 +41,13 @@ body {
       transform: translateX(-100%);
    }
 }
+.swiper {
+   width: 400px !important;
+}
 
 .swiper-slide {
    display: flex !important;
-   width: auto !important;
 }
-
 .swiper-pagination {
    position: relative !important;
 }

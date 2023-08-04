@@ -32,29 +32,25 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
             <div className='grow'>
                <Swiper
                   // install Swiper modules
-                  loop
-                  modules={[Navigation, Pagination, A11y]}
-                  spaceBetween={40}
-                  slidesPerView={3}
-                  navigation
+                  modules={[Navigation, Pagination]}
+                  wrapperTag='swiper'
+                  slidesPerView={1}
                   pagination={{ clickable: true }}
-                  onSwiper={(swiper) => console.log(swiper)}
-                  onSlideChange={() => console.log("slide change")}
                >
-                  {Array(6)
+                  {Array(2)
                      .fill(article.images?.[0])
                      .map((img, idx) => (
                         <SwiperSlide
                            key={idx}
-                           className=' flex items-center justify-center mt-8'
+                           className='flex relative -mb-16 items-center justify-center mt-8'
                         >
                            <Image
-                              width='400'
+                              width='500'
                               key={img + idx}
-                              height='400'
+                              height='500'
                               src={img + (idx + 1) + ".JPG"}
                               alt={""}
-                              className='h-auto w-[200px] lg:w-[350px]'
+                              className='w-[300px] my-auto h-auto lg:w-[350px]'
                            />
                         </SwiperSlide>
                      ))}
