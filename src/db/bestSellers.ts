@@ -42,4 +42,60 @@ export const bestSellers: types.Article[] = [
       isNew: true,
       categories: ["Pull"],
    },
+   {
+      id: 4,
+      name: "SR promotional hoodie blue",
+      cover: "/imgs/promotionalblue1.JPG",
+      description:
+         "Promotional hoodie.Blue, the flag is embroidered on the left side with the website name written on the back.",
+
+      images: ["/imgs/promotionalblue"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "22 000 FCFA",
+      apport: "+ 99,00 € d’apport",
+      isNew: true,
+      categories: ["Pull"],
+   },
+   {
+      id: 5,
+      name: "SR promotional hoodie beige",
+      cover: "/imgs/promotionalbeige21.JPG",
+      description:
+         "Promotional hoodie.Beige, the flag is embroidered on the left side with the website name written on the back.",
+
+      images: ["/imgs/promotionalbeige2"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "22 000 FCFA",
+      apport: "+ 99,00 € d’apport",
+      isNew: true,
+      categories: ["Pull"],
+   },
+   {
+      id: 7,
+      name: "UGLY yellow Tshirt",
+      cover: "/imgs/uglymanyellow1.JPG",
+      description:
+         "Promotional hoodie.Beige, the flag is embroidered on the left side with the website name written on the back.",
+
+      images: ["/imgs/uglymanyellow"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "12 000 FCFA",
+      apport: "+ 99,00 € d’apport",
+      isNew: true,
+      categories: ["Pull"],
+   },
+   {
+      id: 8,
+      name: "UGLY MAN tshirt",
+      cover: "/imgs/uglyman1.JPG",
+      description:
+         "Promotional hoodie.Beige, the flag is embroidered on the left side with the website name written on the back.",
+
+      images: ["/imgs/uglyman"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "12 000 FCFA",
+      apport: "+ 99,00 € d’apport",
+      isNew: true,
+      categories: ["Pull"],
+   },
 ]

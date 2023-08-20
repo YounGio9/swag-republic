@@ -20,7 +20,7 @@ function Article({ name, cover, colors, price, id, apport }: types.Article) {
                <div className='font-bold capitalize lg:text-2xl w-[170px] lg:w-[280px] text-center'>
                   {name}
                </div>
-               <div className='relative flex justify-center items-center mx-7 w-32 h-36 lg:mx-14 lg:w-44 lg:h-60'>
+               <div className='relative flex justify-center items-center mx-2 w-32 h-36 lg:mx-14 lg:w-44 lg:h-60'>
                   <span className='mt-4'>
                      <Image
                         src={cover}
