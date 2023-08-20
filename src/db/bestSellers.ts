@@ -81,7 +81,7 @@ export const bestSellers: types.Article[] = [
       colors: ["#a5272b", "#0f1414", "#7b7262"],
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
-      isNew: true,
+      isNew: false,
       categories: ["Pull"],
    },
    {
@@ -95,7 +95,7 @@ export const bestSellers: types.Article[] = [
       colors: ["#a5272b", "#0f1414", "#7b7262"],
       price: "12 000 FCFA",
       apport: "+ 99,00 € d’apport",
-      isNew: true,
+      isNew: false,
       categories: ["Pull"],
    },
 ]

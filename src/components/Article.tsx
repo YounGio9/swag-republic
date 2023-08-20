@@ -8,7 +8,7 @@ import React from "react"
  * @param {types.Article} Article Article infos
  * @return {React.JSX.Element}: Article Component
  */
-function Article({ name, cover, colors, price, id, apport }: types.Article) {
+function Article({ name, cover, colors, price, id, apport, isNew }: types.Article) {
    return (
       <Link href={`/bags/${id}`}>
          <div className='flex relative flex-col-reverse'>
@@ -31,6 +31,13 @@ function Article({ name, cover, colors, price, id, apport }: types.Article) {
                      />
                   </span>
                </div>
+               <img
+                  width={65}
+                  src='/imgs/soldouticon.png'
+                  className={`absolute top-24 right-0   lg:top-28 lg:right-6 ${
+                     !isNew ? "" : "hidden"
+                  }`}
+               />
                {/* <div className='flex gap-2.5 justify-center mt-8'>
                   {Array.from({ length: colors.length }, (_, index) => (
                      <div
