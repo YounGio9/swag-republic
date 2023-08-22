@@ -74,12 +74,24 @@ export const bestSellers: types.Article[] = [
       id: 7,
       name: "UGLY yellow Tshirt",
       cover: "/imgs/uglymanyellow1.JPG",
-      description:
-         "Promotional hoodie.Beige, the flag is embroidered on the left side with the website name written on the back.",
+      description: "Ugly man yellow t shirt",
 
       images: ["/imgs/uglymanyellow"],
       colors: ["#a5272b", "#0f1414", "#7b7262"],
-      price: "12 000 FCFA",
+      price: "10 000 FCFA",
+      apport: "+ 99,00 € d’apport",
+      isNew: false,
+      categories: ["Pull"],
+   },
+   {
+      id: 9,
+      name: "Smoking Kills T-Shirt",
+      cover: "/imgs/sokingKills1.JPG",
+      description: "Smoking Kills white T shirt",
+
+      images: ["/imgs/smokingKills"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
       categories: ["Pull"],
@@ -88,12 +100,11 @@ export const bestSellers: types.Article[] = [
       id: 8,
       name: "UGLY MAN tshirt",
       cover: "/imgs/uglyman1.JPG",
-      description:
-         "Promotional hoodie.Beige, the flag is embroidered on the left side with the website name written on the back.",
+      description: "Ugly man black T shirt",
 
       images: ["/imgs/uglyman"],
       colors: ["#a5272b", "#0f1414", "#7b7262"],
-      price: "12 000 FCFA",
+      price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
       categories: ["Pull"],
