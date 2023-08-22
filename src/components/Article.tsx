@@ -27,7 +27,7 @@ function Article({ name, cover, colors, price, id, apport, isNew }: types.Articl
                         alt=''
                         width={200}
                         height={200}
-                        className='relative w-auto h-auto -z-10'
+                        className='relative w-[152x] h-auto -z-10'
                      />
                   </span>
                </div>
