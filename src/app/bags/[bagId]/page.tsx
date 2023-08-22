@@ -37,7 +37,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   slidesPerView={1}
                   pagination={{ clickable: true }}
                >
-                  {Array(2)
+                  {Array(article.id === 9 ? 1 : 2)
                      .fill(article.images?.[0])
                      .map((img, idx) => (
                         <SwiperSlide

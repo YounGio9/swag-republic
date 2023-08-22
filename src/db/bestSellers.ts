@@ -89,7 +89,7 @@ export const bestSellers: types.Article[] = [
       cover: "/imgs/smokingkills1.JPG",
       description: "Smoking Kills white T shirt",
 
-      images: ["/imgs/smokingKills"],
+      images: ["/imgs/smokingkills"],
       colors: ["#a5272b", "#0f1414", "#7b7262"],
       price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
