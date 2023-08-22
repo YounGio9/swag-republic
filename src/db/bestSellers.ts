@@ -86,7 +86,7 @@ export const bestSellers: types.Article[] = [
    {
       id: 9,
       name: "Smoking Kills T-Shirt",
-      cover: "/imgs/sokingKills1.JPG",
+      cover: "/imgs/smokingKills1.JPG",
       description: "Smoking Kills white T shirt",
 
       images: ["/imgs/smokingKills"],
