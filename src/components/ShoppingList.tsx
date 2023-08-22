@@ -1,8 +1,9 @@
 "use client"
 
 import { types } from "@/helpers"
-import React from "react"
+import React, { useState } from "react"
 import Article from "./Article"
+import CustomButton from "./CustomButton"
 
 interface Props {
    articles: types.Article[]
@@ -16,17 +17,17 @@ interface Props {
  * @return {React.ReactElement}: A shoppinglist
  */
 function ShopppingList({ articles, title, categories }: Props) {
-   // const [activeCategory, setActiveCategory] = useState<string>("")
+   const [activeCategory, setActiveCategory] = useState<string>("")
 
-   // React.useMemo(() => {
-   //    console.log(activeCategory)
-   // }, [activeCategory])
+   React.useMemo(() => {
+      console.log(activeCategory)
+   }, [activeCategory])
    return (
       <div className='flex flex-col gap-4 justify-center items-center lg:mx-auto lg:max-w-[90rem]'>
          <section className='bg-repeat bg-fixed flex flex-col items-center pt-12 lg:pt-24'>
             <p className='text-3xl font-medium lg:text-6xl'>{title}</p>
 
-            {/* {!!categories && (
+            {!!categories && (
                <div className='flex gap-6'>
                   {categories?.map((category) => (
                      <CustomButton
@@ -39,15 +40,14 @@ function ShopppingList({ articles, title, categories }: Props) {
                      </CustomButton>
                   ))}
                </div>
-            )} */}
+            )}
 
             <div className='flex flex-wrap gap-4 justify-center my-8 max-w-2xl lg:my-12 lg:max-w-screen-2xl'>
                {articles.map(
-                  (pull, idx) => (
-                     // (!activeCategory || pull.categories.includes(activeCategory)) && (
-                     <Article key={pull.name + idx} {...pull} />
-                  )
-                  // )
+                  (pull, idx) =>
+                     (!activeCategory || pull.categories.includes(activeCategory)) && (
+                        <Article key={pull.name + idx} {...pull} />
+                     )
                )}
             </div>
          </section>

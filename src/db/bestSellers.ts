@@ -81,7 +81,7 @@ export const bestSellers: types.Article[] = [
       price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
-      categories: ["Pull"],
+      categories: ["T-Shirt"],
    },
    {
       id: 9,
@@ -94,7 +94,7 @@ export const bestSellers: types.Article[] = [
       price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
-      categories: ["Pull"],
+      categories: ["T-Shirt"],
    },
    {
       id: 8,
@@ -107,6 +107,6 @@ export const bestSellers: types.Article[] = [
       price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
       isNew: false,
-      categories: ["Pull"],
+      categories: ["T-Shirt"],
    },
 ]

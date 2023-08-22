@@ -15,7 +15,7 @@ function Article({ name, cover, colors, price, id, apport, isNew }: types.Articl
             <div className='absolute top-1 left-1 border rounded-lg border-black w-full h-full'></div>
             <div
                className='relative rounded-lg border transform-gpu border-black bg-white 
-            hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9'
+            hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9 h-[300px]'
             >
                <div className='font-bold capitalize lg:text-2xl w-[170px] lg:w-[280px] text-center'>
                   {name}
@@ -27,7 +27,7 @@ function Article({ name, cover, colors, price, id, apport, isNew }: types.Articl
                         alt=''
                         width={200}
                         height={200}
-                        className='relative w-[152x] h-auto -z-10'
+                        className='relative w-auto h-auto -z-10'
                      />
                   </span>
                </div>
