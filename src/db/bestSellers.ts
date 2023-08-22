@@ -80,7 +80,7 @@ export const bestSellers: types.Article[] = [
       colors: ["#a5272b", "#0f1414", "#7b7262"],
       price: "10 000 FCFA",
       apport: "+ 99,00 € d’apport",
-      isNew: false,
+      isNew: true,
       categories: ["T-Shirt"],
    },
    {
