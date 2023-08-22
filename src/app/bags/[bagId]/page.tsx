@@ -65,7 +65,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                      <strong className='font-semibold'> {article.name} </strong>
                   </span>
                   <p className='mt-2 bg-luxury-green'>
-                     <span className='text-3xl font-bold'>22 000 F</span>
+                     <span className='text-3xl font-bold'>{article.price}</span>
                   </p>
                   <p>
                      <span></span>
