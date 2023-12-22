@@ -1,21 +1,8 @@
 import { types } from "@/helpers"
 
 export const bestSellers: types.Article[] = [
-   {
+    {
       id: 1,
-      name: "Long sleeve",
-      cover: "/imgs/long-sleeve1.jpg",
-      description:
-         "Promotional hoodie.Black, the flag is embroidered on the left side with the website name written on the back.",
-      images: ["/imgs/long-sleeve", "/imgs/long-sleeve"],
-      colors: ["#a5272b", "#0f1414", "#7b7262"],
-      price: "15 000 FCFA",
-      apport: "+ 99,00 € d'apport",
-      isNew: true,
-      categories: [],
-   },
-   {
-      id: 2,
       name: "Jacket",
       cover: "/imgs/jacket1.jpg",
       description:
@@ -27,6 +14,20 @@ export const bestSellers: types.Article[] = [
       isNew: true,
       categories: [],
    },
+   {
+      id: 2,
+      name: "Long sleeve",
+      cover: "/imgs/long-sleeve1.jpg",
+      description:
+         "Promotional hoodie.Black, the flag is embroidered on the left side with the website name written on the back.",
+      images: ["/imgs/long-sleeve", "/imgs/long-sleeve"],
+      colors: ["#a5272b", "#0f1414", "#7b7262"],
+      price: "15 000 FCFA",
+      apport: "+ 99,00 € d'apport",
+      isNew: true,
+      categories: [],
+   },
+  
    {
       id: 3,
       name: "Business Only White",
