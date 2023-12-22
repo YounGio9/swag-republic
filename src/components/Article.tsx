@@ -11,16 +11,16 @@ import React from "react"
 function Article({ name, cover, colors, price, id, apport, isNew }: types.Article) {
    return (
       <Link href={`/bags/${id}`}>
-         <div className='flex relative flex-col-reverse'>
+         <div className='flex relative flex-col-reverse w-full'>
             <div className='absolute top-1 left-1 border rounded-lg border-black w-full h-full'></div>
             <div
                className='relative rounded-lg border transform-gpu border-black bg-white 
-            hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9 h-[300px]'
+            hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9 h-[600px] w-full lg:h-[500px]'
             >
-               <div className='font-bold capitalize lg:text-2xl w-[170px] lg:w-[280px] text-center'>
+               <div className='font-bold capitalize lg:text-2xl w-[170px] lg:w-[280px] text-center my-2'>
                   {name}
                </div>
-               <div className='relative flex justify-center items-center mx-2 w-32 h-36 lg:mx-14 lg:w-44 lg:h-60'>
+               <div className='relative flex justify-center items-center mx-2 w-full h-58 lg:mx-14 lg:w-44 lg:h-60'>
                   <span className='mt-4'>
                      <Image
                         src={cover}
@@ -48,7 +48,7 @@ function Article({ name, cover, colors, price, id, apport, isNew }: types.Articl
                   ))}
                </div> */}
 
-               <p className='font-bold lg:text-2xl'> {price} </p>
+               <p className='font-bold lg:text-2xl mt-8'> {price} </p>
                <div className='flex flex-col items-center lg:mb-2 mb-6 mt-2'> </div>
             </div>
          </div>

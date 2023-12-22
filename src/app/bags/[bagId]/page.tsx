@@ -21,10 +21,10 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
    ) as Article
    const router = useRouter()
 
-   const handleClick = () => {
-      localStorage.setItem("article", JSON.stringify(article))
-      //   router.push("/commander")
-   }
+   // const handleClick = () => {
+   //    localStorage.setItem("article", JSON.stringify(article))
+   //    //   router.push("/commander")
+   // }
    return (
       <>
          <div className='flex flex-col lg:flex-row'>
@@ -37,7 +37,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   slidesPerView={1}
                   pagination={{ clickable: true }}
                >
-                  {Array(article.id === 9 ? 1 : 2)
+                  {Array(article.images?.length)
                      .fill(article.images?.[0])
                      .map((img, idx) => (
                         <SwiperSlide
@@ -48,9 +48,9 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                               width='500'
                               key={img + idx}
                               height='500'
-                              src={img + (idx + 1) + ".JPG"}
+                              src={img + (idx + 1) + ".jpg"}
                               alt={""}
-                              className='w-[300px] my-auto h-auto lg:w-[350px]'
+                              className='w-[340px] my-auto h-auto lg:w-[350px]'
                            />
                         </SwiperSlide>
                      ))}
@@ -70,7 +70,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   <p>
                      <span></span>
                   </p>
-                  <div className='relative py-4 px-6 text-white bg-black rounded-lg mb-8'>
+                  {/* <div className='relative py-4 px-6 text-white bg-black rounded-lg mb-8'>
                      <svg
                         width='24'
                         height='26'
@@ -129,7 +129,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                         ></path>
                      </svg>
                      <span>{article.description}</span>
-                  </div>
+                  </div> */}
                   {/*
                   <ul className='flex flex-col gap-3 my-4 lg:hidden'>
                      <li className='flex flex-row gap-3 items-center mb-3'>
@@ -274,13 +274,13 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                         <div className='font-medium'>Garantie toute la location</div>
                      </li>
                   </ul> */}
-                  <CustomButton
+                  {/* <CustomButton
                      background='yellow'
                      handleClick={handleClick}
                      color='black'
                   >
                      Je commande
-                  </CustomButton>
+                  </CustomButton> */}
                </div>
             </div>
          </div>

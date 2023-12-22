@@ -42,7 +42,7 @@ function ShopppingList({ articles, title, categories }: Props) {
                </div>
             )}
 
-            <div className='flex flex-wrap gap-4 justify-center my-8 max-w-2xl lg:my-12 lg:max-w-screen-2xl'>
+            <div className='flex flex-wrap gap-4 justify-center my-8 w-full lg:my-12 lg:max-w-screen-2xl'>
                {articles.map(
                   (pull, idx) =>
                      (!activeCategory || pull.categories.includes(activeCategory)) && (
